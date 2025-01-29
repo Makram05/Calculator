@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AKR Calculator</title>
+    <link rel="styleSheet" href="style.css">
+</head>
+<body>
+    <div id="calculator">
+       <input  type="text" id="display" readonly>
+       <div class="button-container">
+         <button class="button" onclick=" calValue=calValue+1; document.querySelector('#display').value=calValue;"> 1 </button>
+         
+        <button class="button" onclick="calValue=calValue+2; document.querySelector('#display').value=calValue;"> 2 </button>
+
+         <button class="button" onclick="calValue=' '; document.querySelector('#display').value=calValue;"> C </button>
+
+         <button class="button" onclick="calValue=calValue+3; document.querySelector('#display').value=calValue;"> 3 </button>
+
+         <button class="button" onclick="calValue=calValue+4; document.querySelector('#display').value=calValue;"> 4 </button>
+
+         <button class="button" onclick="calValue=calValue+'+'; document.querySelector('#display').value=calValue;"> + </button>
+
+         <button class="button" onclick="calValue=calValue+5; document.querySelector('#display').value=calValue;"> 5 </button>
+
+         <button class="button" onclick="calValue=calValue+6; document.querySelector('#display').value=calValue;"> 6 </button>
+
+         <button class="button" onclick="calValue=calValue+'-'; document.querySelector('#display').value=calValue;"> - </button>
+
+         <button class="button" onclick="calValue=calValue+7; document.querySelector('#display').value=calValue;"> 7 </button>
+
+         <button class="button" onclick="calValue=calValue+8; document.querySelector('#display').value=calValue;"> 8 </button>
+
+         <button class="button" onclick="calValue=calValue+'*'; document.querySelector('#display').value=calValue;"> * </button>
+
+         <button class="button" onclick="calValue=calValue+9; document.querySelector('#display').value=calValue;"> 9 </button>
+
+         <button class="button" onclick="calValue=eval(calValue); document.querySelector('#display').value=calValue;"> = </button>
+
+         <button class="button" onclick="calValue=calValue+'/'; document.querySelector('#display').value=calValue;"> / </button>
+
+         <button class="button" onclick="calValue=calValue+0; document.querySelector('#display').value=calValue;"> 0 </button>
+         
+         <button class="button" onclick="calValue=calValue+'.'; document.querySelector('#display').value=calValue;"> . </button>
+     </div>
+    </div>
+
+    <script>
+        let calValue='';
+        document.querySelector('#display').value=calValue;
+    </script>
+</body>
+</html>
